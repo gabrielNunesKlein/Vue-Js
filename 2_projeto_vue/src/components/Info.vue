@@ -30,11 +30,13 @@ export default{
     components: {
         Perfil
     },
+    props:{
+        email: String
+    },
     data(){
         return {
             esta_trabalhando: false,
             mostrar_email: false,
-            email: 'Gabriel.klein@gmail.com',
             meu_portifolio: 'https://github.com/gabrielNunesKlein',
             textoBotao: 'Mostrar E-mail',
             tecnologias_backend: ["Python", "Java", "Spring Boot", "Django"],
